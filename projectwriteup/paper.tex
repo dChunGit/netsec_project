@@ -1,0 +1,101 @@
+\documentclass{sig-alternate}
+%\documentclass[11pt,letterpaper,singlecolumn]{article}
+%%\usepackage{url}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%%\usepackage{latexsym}
+%%\usepackage{times}
+%%\usepackage{fancyhdr}
+%%\usepackage{multirow}
+%\usepackage{listing}
+\usepackage{soul}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+\newcommand{\parbold}[1]{\noindent{\bf #1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Remarks
+\newif\ifremark
+\long\def\remark#1{
+\ifremark%
+        \begingroup%
+        \dimen0=\columnwidth
+        \advance\dimen0 by -1in%
+        \setbox0=\hbox{\parbox[b]{\dimen0}{\protect\em #1}}
+        \dimen1=\ht0\advance\dimen1 by 2pt%
+        \dimen2=\dp0\advance\dimen2 by 2pt%
+        \vskip 0.25pt%
+        \hbox to \columnwidth{%
+                \vrule height\dimen1 width 3pt depth\dimen2%
+                \hss\copy0\hss%
+                \vrule height\dimen1 width 3pt depth\dimen2%
+        }%
+        \endgroup%
+\fi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Block comments
+\newcommand{\ignore}[1]{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\remarktrue
+%\remarkfalse
+% \remark{this is a comment that shows up in text
+% Switch remarkfalse on to turn comments off } 
+% -- use in body, not up here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\title{ Scanning For Vulnerable Apache Servers \\
+		\large Enterprise Network Security }
+\author{ Dylan Bray and David Chun }
+
+
+
+\pagenumbering{arabic}
+\date{}  % comment this out if you want the date to print
+
+\maketitle
+
+\begin{abstract}
+\input{abstract} 
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\input {intro}
+
+\section{Motivation}
+\label{sec:motivation}
+\input {motivation}
+
+% \ignore{comment text} is better than a line comment.
+\ignore{Sometimes background is merged into motivation, and is not required separately.}
+
+\section{Our Architecture}
+\label{sec:arch}
+\input {arch}
+
+\section{Experimental Results}
+\label{sec:results}
+\input{results}
+
+\section{Related Work}
+\label{sec:related}
+\input {related}
+
+\section{Conclusions}
+\label{sec:conclusion}
+\input {conclusion}
+
+
+{ 
+\bibliographystyle{abbrv}
+\bibliography{biblio}
+}
+
+\end {document}
+

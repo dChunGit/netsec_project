@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{huang_xia_sun_xue_2015}
+Z.~Huang, C.~Xia, B.~Sun, and H.~Xue.
+\newblock Analyzing and summarizing the web server detection technology based
+  on http.
+\newblock {\em 2015 6th IEEE International Conference on Software Engineering
+  and Service Science (ICSESS)}, Nov 2015.
+
+\bibitem{li_avellino_janies_collins_2016}
+X.~{Li}, P.~{Avellino}, J.~{Janies}, and M.~P. {Collins}.
+\newblock Software asset analyzer: A system for detecting configuration
+  anomalies.
+\newblock In {\em MILCOM 2016 - 2016 IEEE Military Communications Conference},
+  pages 998--1003, Nov 2016.
+
+\end{thebibliography}
