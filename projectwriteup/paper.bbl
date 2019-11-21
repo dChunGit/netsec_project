@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{mcafee_rdp_blog}
+E.~{Caroll}, A.~{Mundo}, P.~{Laulheret}, C.~{Beek}, and S.~{Povolny}.
+\newblock Rdp stands for “really do patch!” – understanding the wormable
+  rdp vulnerability cve-2019-0708, 2019.
+
 \bibitem{dillon_2019}
 S.~Dillon.
 \newblock @zerosum0x0: reverse engineering, penetration testing, exploit
@@ -21,5 +26,15 @@ X.~{Li}, P.~{Avellino}, J.~{Janies}, and M.~P. {Collins}.
 \bibitem{go_zingbox_com_2019}
 Z.~S. Research.
 \newblock Bluekeep and forthcoming rdp attacks, 2019.
+
+\bibitem{zain_ankur_derek_log_2014}
+Z.~Shamsi, A.~Nandwani, D.~Leonard, and D.~Loguinov.
+\newblock Hershel: Single-packet os fingerprinting.
+\newblock {\em ACM SIGMETRICS Performance Evaluation Review}, 42, 06 2014.
+
+\bibitem{yan_chen_2019}
+T.~Yan and J.~Chen.
+\newblock Exploitation of windows cve-2019-0708 (bluekeep): Three ways to write
+  data into the kernel with rdp pdu, Sep 2019.
 
 \end{thebibliography}
