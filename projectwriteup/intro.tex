@@ -1,20 +1,7 @@
-The proliferation of working remotely led to the need for remote desktop
-access. Microsoft created the Remote Desktop Protocol (RDP) as a remote
-desktop solution for Windows. Millions of machines now have RDP 
-enabled, exposing their computers to potential attacks.
+The proliferation of working remotely has led to the need for remote desktop access. Microsoft created the Remote Desktop Protocol (RDP) as a remote desktop solution for Windows. Millions of machines now have RDP enabled, even when it is infrequently or never used. In addition, many of these machines are exposed directly to the internet, rather than being secured behind a VPN, vulnerable to RDP attacks.
 
-CVE-2019-0708 ``BlueKeep'' was first reported in May 2019 and affects
-all unpatched versions of Windows betweek Windows 2000 and Windows 
-Server 2008 R2/Windows 7. Windows RDP has services bound to any of 
-32 channels. Attackers can request a SVC named MS\_T120 and bind to
-any channel other than 31, which will cause a  heap corruption and allow
-for arbitrary code execution.
+CVE-2019-0708 ``BlueKeep'' was first reported in May 2019 and affects all unpatched versions of Windows between Windows 2000 and Windows Server 2008 R2/Windows 7. BlueKeep allows arbitrary code execution through a bug that is exploited with a specially crafted packet. Windows RDP has services bound to any of 32 channels, and each SVC is created at startup and torn down on shutdown. However, attackers can request a SVC named MS\_T120 and bind to any channel other than 31, which will cause a  heap corruption and allow for arbitrary code execution ~\cite{mcafee_rdp_blog}.
 
-To detect BlueKeep, we plan to scan the internet and fingerprint each 
-operating system to find potentially vulnerable systems. We will then
-determine whether RDP is enabled by searching for its port.
+To detect BlueKeep, we plan to scan the internet and fingerprint each operating system to find potentially vulnerable systems. We will then determine whether RDP is enabled by searching for its default port. With this detection, we will be able to compare vulnerable machines and analyze the current scope of the vulnerability. We will then be a able to compare these results with existing tools such as Shodan.
 
-Fourth, fifth: Delve deeper into the approach and experimental setup. 
-In the final report, describe key findings.
-
-End with outline or what comes next and why. 
+The first step is to complete a review of existing literature and determine the set up for creating our scan. We will then run the scan and collect relevant information for comparison with other tools. Based on this, we may modify or refine our scan and the information we collect to ensure more complete results. We will then report the commonalities in machines that we find are vulnerable.
