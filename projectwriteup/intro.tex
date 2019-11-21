@@ -1,11 +1,18 @@
-First paragraph on the technology/society trends that lead 
-to the problem at hand.
+The proliferation of working remotely led to the need for remote desktop
+access. Microsoft created the Remote Desktop Protocol (RDP) as a remote
+desktop solution for Windows. Millions of machines now have RDP 
+enabled, exposing their computers to potential attacks.
 
-Second para: describe the key problem that if solved would make
-an impact. Why the current approaches leave a gap?
+CVE-2019-0708 ``BlueKeep'' was first reported in May 2019 and affects
+all unpatched versions of Windows betweek Windows 2000 and Windows 
+Server 2008 R2/Windows 7. Windows RDP has services bound to any of 
+32 channels. Attackers can request a SVC named MS_T120 and bind to
+any channel other than 31, which will cause a  heap corruption and allow
+for arbitrary code execution.
 
-Third: describe your approach. Key insight that enables your approach,
-and what is novel/interesting about the insight.
+To detect BlueKeep, we plan to scan the internet and fingerprint each 
+operating system to find potentially vulnerable systems. We will then
+determine whether RDP is enabled by searching for its port.
 
 Fourth, fifth: Delve deeper into the approach and experimental setup. 
 In the final report, describe key findings.

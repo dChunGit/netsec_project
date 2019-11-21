@@ -1,3 +1,14 @@
 Describe the overall area of contribution, the crux of the problem, 
 and end with highlights of results. For the initial report, end with
 the proposed experiments and what you aim to find out.
+
+We aim to detect systems vulnerable to CVE-2019-0708, also 
+known as ''BlueKeep,'' a critical vulnerability in the Windows 
+Remote Desktop Protocol. We approach the problem by
+scanning and fingerprinting OS version, looking for an 
+exposed RDP port, and then confirming vulnerability through
+a request/response comparison. We can aggregate information
+about vulnerable hosts to analyze the scope and severity of 
+this vulnerability. We also compare our scan to existing tools
+such as Shodan.
+
