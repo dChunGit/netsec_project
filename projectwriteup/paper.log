@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  20 NOV 2019 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  26 NOV 2019 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -337,11 +337,11 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 61
 (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (./abstract.tex) (./intro.tex)
-(./motivation.tex) (./arch.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdfte
-x.map}
+(./motivation.tex) (./arch.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex
+.map}
 
 
-] (./results.tex) (./related.tex) (./conclusion.tex) (./paper.bbl)
+]) (./results.tex) (./related.tex) (./conclusion.tex) (./paper.bbl)
 [2] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
  3622 strings out of 492167
@@ -358,7 +358,7 @@ c/amsfonts/cm/cmti9.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.
 pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb>
-Output written on paper.pdf (2 pages, 95697 bytes).
+Output written on paper.pdf (2 pages, 96768 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
