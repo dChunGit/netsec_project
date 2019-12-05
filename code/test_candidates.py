@@ -17,7 +17,7 @@ patched_dict = {}
 vuln_dict = {}
 
 for ip in ip_list:
-    ip = ip[0]
+    ip = ip[5]
     
     print('Testing ' + ip)
     
