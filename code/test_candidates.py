@@ -5,8 +5,6 @@ import ScannerV2
 with open('candidates.csv', 'r') as candidates:
     reader = csv.reader(candidates)
     ip_list = list(reader)
-    
-print(ip_list)
 
 count = 0
 offline_count = 0
@@ -16,10 +14,9 @@ offline_dict = {}
 patched_dict = {}
 vuln_dict = {}
 
-for ip in ip_list:
-    ip = ip[5]
+for ip in ip_list[0]:
     
-    print('Testing ' + ip)
+    print('Testing ' + str(ip))
     
     whois = IPWhois(ip)
     info = whois.lookup_rdap()
