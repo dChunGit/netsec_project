@@ -8,6 +8,7 @@
 %%\usepackage{fancyhdr}
 %%\usepackage{multirow}
 %\usepackage{listing}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{soul}
 \usepackage{algorithmic}
 \usepackage{algorithm}
@@ -84,6 +85,19 @@
 \section{Our Architecture}
 \label{sec:arch}
 \input {arch}
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{329A9D} 
+{\color[HTML]{333333} \textbf{OS}}                                                               & {\color[HTML]{333333} \textbf{TTL}} & {\color[HTML]{333333} \textbf{TCP Window}} \\ \hline
+\textbf{Linux}                                                                                   & 64                                  & 5840                                       \\ \hline
+\textbf{Windows XP}                                                                              & 128                                 & 65535                                      \\ \hline
+\textbf{\begin{tabular}[c]{@{}l@{}}Windows Server 2008\\ Windows Vista\\ Windows 7\end{tabular}} & 128                                 & 8192                                       \\ \hline
+\end{tabular}
+\caption{Passive OS Fingerprints}
+\end{table}
+
 
 \section{Experimental Results}
 \label{sec:results}
