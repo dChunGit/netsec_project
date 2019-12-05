@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  4 DEC 2019 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  4 DEC 2019 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,7 +352,7 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 Here is how much of TeX's memory you used:
  3649 strings out of 492167
  44794 string characters out of 6131557
- 121238 words of memory out of 5000000
+ 120238 words of memory out of 5000000
  7901 multiletter control sequences out of 15000+600000
  48313 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -365,7 +365,7 @@ mtt9.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share
 /texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b>
-Output written on paper.pdf (3 pages, 110802 bytes).
+Output written on paper.pdf (3 pages, 112480 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
