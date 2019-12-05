@@ -8,12 +8,15 @@ ips = []
 with open("ipaddresses.txt") as ipfile:
     ips = ipfile.read().splitlines()
 
+print(len(ips))
+
 print(ips)
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80))
 myIP = s.getsockname()[0]
 print(myIP)
 s.close()
+
 for address in ips:
   ip = IP(src=myIP, dst=address)
   SYN = TCP(sport=1040, dport=3389, flags="S", seq=12345)
@@ -23,7 +26,7 @@ input("Press Enter to continue...")
 
 with open('log.txt') as f:
     lines = f.read().splitlines()
-    data = set()
+    data = []
     for line in lines:
       clean_line = line.split("] ")[1]
       try:
@@ -32,11 +35,17 @@ with open('log.txt') as f:
           if 'Win' in scanned_address['os']:
             server_ip = scanned_address['srv'].split('/')[0]
             if server_ip in ips:
-              data.add(server_ip)
+              data.append(server_ip)
+            # else:
+            #   print(scanned_address)
+          else:
+            print(scanned_address)
       except:
         print(clean_line)
-    print(sorted(data))
+
+    # print(len(data))
+    # print(sorted(data))
 
 with open('candidates.csv','w') as ipaddresses:
-  wr = csv.writer(ipaddresses, quoting=csv.QUOTE_ALL)
+  wr = csv.writer(ipaddresses)
   wr.writerow(data)
