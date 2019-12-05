@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  4 DEC 2019 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  4 DEC 2019 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -347,25 +347,28 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 .map}
 
 
-]) (./results.tex) (./related.tex [2]) (./conclusion.tex) (./paper.bbl)
-[3] (./paper.aux) ) 
+]) (./results.tex) (./related.tex [2])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./conclusion.tex) (./paper.bbl) [3] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
  3649 strings out of 492167
  44794 string characters out of 6131557
- 120238 words of memory out of 5000000
+ 121238 words of memory out of 5000000
  7901 multiletter control sequences out of 15000+600000
  48313 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,8n,35p,1771b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt9.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share
-/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b>
-Output written on paper.pdf (3 pages, 112480 bytes).
+{/usr/share/texmf-dist/font
+s/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
+b></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (3 pages, 112883 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
