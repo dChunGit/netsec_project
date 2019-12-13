@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  4 DEC 2019 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.19)  13 DEC 2019 01:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,11 +343,14 @@ LaTeX Font Info:    Trying to load font information for T1+aett on input line 6
 (/usr/share/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) (./abstract.tex) (./intro.tex)
-(./motivation.tex) (./arch.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex
-.map}
+(./motivation.tex)
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]) (./results.tex) (./related.tex [2])
+] (./arch.tex) (./results.tex)
+(./related.tex [2])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -355,11 +358,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  3649 strings out of 492167
  44794 string characters out of 6131557
- 121238 words of memory out of 5000000
+ 122238 words of memory out of 5000000
  7901 multiletter control sequences out of 15000+600000
  48313 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,35p,1771b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,8n,35p,1614b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/font
 s/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
@@ -368,7 +371,7 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-dist
 w/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (3 pages, 112883 bytes).
+Output written on paper.pdf (3 pages, 113704 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
