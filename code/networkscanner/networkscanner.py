@@ -11,16 +11,16 @@ myIP = s.getsockname()[0]
 print(myIP)
 s.close()
 
-with open("bluekeepips.txt") as ipfile:
-  for line in ipfile:
-    address = line.strip()
-    print(address)
+# with open("bluekeepips.txt") as ipfile:
+#   for line in ipfile:
+#     address = line.strip()
+#     print(address)
 
-    ip = IP(src=myIP, dst=address)
-    SYN = TCP(sport=1040, dport=3389, flags="S", seq=12345)
-    send(ip/SYN)
+#     ip = IP(src=myIP, dst=address)
+#     SYN = TCP(sport=1040, dport=3389, flags="S", seq=12345)
+#     send(ip/SYN)
 
-input("Press Enter to continue...")
+# input("Press Enter to continue...")
 
 with open('log.txt') as f:
     lines = f.read().splitlines()
@@ -32,7 +32,7 @@ with open('log.txt') as f:
         if 'os' in scanned_address:
           if 'Win' in scanned_address['os']:
             server_ip = scanned_address['srv'].split('/')[0]
-            if server_ip in ips:
+            if server_ip != myIP:
               data.append(server_ip)
             # else:
             #   print(scanned_address)
@@ -41,7 +41,7 @@ with open('log.txt') as f:
       except:
         print(clean_line)
 
-    # print(len(data))
+    print(len(data))
     # print(sorted(data))
 
 with open('candidates.csv','w') as ipaddresses:
