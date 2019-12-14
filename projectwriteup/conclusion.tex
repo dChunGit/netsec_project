@@ -1,0 +1,5 @@
+Internet scanning is incredibly important for keeping a network secure and maintained. Since BlueKeep was exposed less than a year to date, it was an ideal CVE to test not only patch adoption but also to demonstrate the value of scanners such as ours in ensuring patches were applied correctly.
+
+Out of the initial set of 74 million IP addresses scanned, only roughly 1400 were qualified as candidate IPs, matching the correct OS and port requirements. Of this smaller subset, half of them were found to be still vulnerable to BlueKeep. Although a patch has been out for well over 6 months from time of writing, many machines either have not updated or the patch was not applied correctly.
+
+Future work along the lines of this BlueKeep scanner would include improving OS fingerprinting to increase the scope of IPs we check while still maintaining efficiency as well as extending this tool to other potential CVEs which would rely on similar port and service parameters.
