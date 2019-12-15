@@ -10,4 +10,4 @@
 8. Run test_candidates.py
 9. See results in results.csv
 
-BlueKeep scanner used in test_candidates.py taken from: https://github.com/turingcompl33t/bluekeep
+BlueKeep scanner used in test_candidates.py from: https://github.com/turingcompl33t/bluekeep
